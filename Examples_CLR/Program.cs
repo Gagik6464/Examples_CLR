@@ -1,6 +1,13 @@
-﻿using Test_Examples_CLR;
+﻿using System.Threading.Channels;
+using Newtonsoft.Json.Linq;
 
-var obj1 = new EqualityCheck("Name", 20);
-var obj2 = new EqualityCheck("Name", 20);
+JToken df = string.Empty;
+var dfg = df.ToString();
 
-Console.WriteLine(obj1 >= obj2);
+Console.WriteLine(df.ToString());
+
+class Class1
+{
+    public volatile string Name;
+}
+
